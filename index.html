@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Princess Jessa💖</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://i.imgur.com/t7xWuOb.jpg') no-repeat center center fixed; /* Dolphin-themed background */
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            margin-top: 50px;
+            font-size: 3rem;
+            animation: fadeIn 2s ease-in-out;
+            color: rgb(255, 0, 21);
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 20px auto;
+            max-width: 600px;
+            animation: slideIn 2s ease-in-out;
+            color: rgb(0, 0, 0);
+        }
+
+        .button-container {
+            margin: 30px;
+        }
+
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #ff1493;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .heart {
+            font-size: 5rem;
+            color: #ff1493;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi, Princess 💕</h1>
+    <p>You are the sunshine in my cloudy days. I can’t wait for the day I get to court you officially! Until then, stay amazing and keep smiling. 😊</p>
+    <p class="heart">❤️</p>
+
+    <div class="button-container">
+        <button onclick="showMessage()">Click Me!</button>
+        <button onclick="changeBackground()">Change Background</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert('You are doing amazing, and I’m proud of you! 💖');
+        }
+
+        function changeBackground() {
+            const backgrounds = [
+                'https://i.imgur.com/t7xWuOb.jpg',
+                'https://i.imgur.com/RrKBBz5.jpg',
+                'https://i.imgur.com/0KvBrL7.jpg'
+            ];
+            const randomIndex = Math.floor(Math.random() * backgrounds.length);
+            document.body.style.backgroundImage = `url('${backgrounds[randomIndex]}')`;
+        }
+    </script>
+</body>
+</html>
